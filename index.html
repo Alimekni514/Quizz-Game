@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz Orenda</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- start Quizz Button -->
+    <div class="start_btn"><button>Game On</button>
+    </div>
+    <img src="images/rafess.png" alt="" class="rabit">
+    <img src="images/quiiz copy.png" alt="" class="quizimg">
+    <!-- info Box -->
+    <div class="info_box">
+      <div class="info_title">
+        <span>Orenda Quizz</span>
+      </div>
+      <div class="info_list">
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per each question.
+        </div>
+        <div class="info">
+          2. Once you select your answer, it can't be undone.
+        </div>
+        <div class="info">
+          3. You can't select any option once time goes off.
+        </div>
+        <div class="info">
+          4. You can't exit from the Quiz while you're playing.
+        </div>
+        <div class="info">
+          5. You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quizz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Awesome Quiz Application</div>
+        <div class="timer">
+          <div class="time_left_txt">Time Left</div>
+          <img src="images/animator.gif" alt="" />
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text">
+          <!-- Here I've inserted question from JavaScript -->
+          <!-- <span>What Does HTML stand for?</span> -->
+        </div>
+        <div class="option_list">
+          <!-- Here I've inserted options from JavaScript -->
+          <!-- <div class="option">
+            <span>HYper Text Preprocessor</span>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="option">
+            <span>HYper Text Markup Language</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option">
+            <span>HYper Text Multiple Language</span>
+          </div>
+          <div class="option">
+            <span>HYper Tool Multi Language</span>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+        <div class="total_que">
+          <!-- Here I've inserted Question Count Number from JavaScript -->
+          <span
+            ><p>2</p>
+            of
+            <p>5</p>
+            Questions</span
+          >
+        </div>
+        <button class="next_btn">Next Que</button>
+      </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!</div>
+      <div class="score_text">
+        <span>and sorry,You Got Only <p>2</p>  Out Of <p>5</p></span >
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/questions.js"></script>
+  </body>
+</html>
